@@ -40,7 +40,12 @@ namespace MathQuiz
 
         // Display the current date using this format: 27 August 2020
         DateTime date = DateTime.Now;
-        
+
+        // Audio Path for right answers
+        String audioPath = "Sounds/perfect-sound-effect.wav";
+        String audioPathThankYou = "machine-voice-thank-you-sound-effect";
+
+
 
         /// <summary>
         /// Start the quiz by filling in all of the problems
@@ -94,6 +99,7 @@ namespace MathQuiz
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
             timer1.Start();
+
         }
 
         /// <summary>
@@ -140,7 +146,12 @@ namespace MathQuiz
                 // If CheckTheAnswer() returns false, keep counting
                 // down. Decrease the time left by one second and 
                 // display the new time left by updating the 
-                // Time Left label.
+                // Time Left label.a
+                if (timeLeft <= 6)
+                {
+                    timeLabel.BackColor = Color.Red;
+                }
+
                 timeLeft = timeLeft - 1;
                 timeLabel.Text = timeLeft + " seconds";
             }
@@ -156,6 +167,7 @@ namespace MathQuiz
                 product.Value = multiplicand * multiplier;
                 quotient.Value = dividend / divisor;
                 startButton.Enabled = true;
+                timeLabel.BackColor = Color.White;
             }
         }
         private void answer_Enter(object sender, EventArgs e)
@@ -168,6 +180,52 @@ namespace MathQuiz
                 int lengthOfAnswer = answerBox.Value.ToString().Length;
                 answerBox.Select(0, lengthOfAnswer);
             }
+        }
+
+        private void playSound(String sound)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
+            player.SoundLocation = sound;
+            player.Load();
+            player.Play();
+        }
+
+        private void sum_ValueChanged(object sender, EventArgs e)
+        {
+            if (sum.Value == addend1 + addend2 && timeLeft > 0)
+            {
+                playSound(audioPath);
+            }
+
+
+        }
+
+        private void difference_ValueChanged(object sender, EventArgs e)
+        {
+            if (difference.Value == minuend - subtrahend && timeLeft > 0)
+            {
+                playSound(audioPath);
+            }
+
+        }
+
+        private void product_ValueChanged(object sender, EventArgs e)
+        {
+            if (product.Value == multiplicand * multiplier && timeLeft > 0)
+            {
+                playSound(audioPath);
+
+            }
+        }
+
+        private void quotient_ValueChanged(object sender, EventArgs e)
+        {
+            if(quotient.Value == dividend / divisor && timeLeft > 0)
+            {
+                playSound(audioPath);
+
+            }
+
         }
     }
 }
