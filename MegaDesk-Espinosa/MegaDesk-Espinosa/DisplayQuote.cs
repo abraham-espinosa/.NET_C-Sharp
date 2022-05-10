@@ -12,9 +12,18 @@ namespace MegaDesk_Espinosa
 {
     public partial class DisplayQuote : Form
     {
-        public DisplayQuote()
+        private DeskQuote _deskQuote;
+        public DisplayQuote(DeskQuote deskQuote)
         {
+            _deskQuote = deskQuote;
             InitializeComponent();
+        }
+
+
+        private void DisplayQuote_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show(Convert.ToString(_deskQuote.CustomerName));
+
         }
     }
 }
