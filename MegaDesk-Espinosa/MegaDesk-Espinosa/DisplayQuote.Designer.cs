@@ -64,10 +64,11 @@ namespace MegaDesk_Espinosa
             // label478
             // 
             this.label478.AutoSize = true;
-            this.label478.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label478.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label478.ForeColor = System.Drawing.Color.Black;
             this.label478.Location = new System.Drawing.Point(122, 40);
             this.label478.Name = "label478";
-            this.label478.Size = new System.Drawing.Size(106, 25);
+            this.label478.Size = new System.Drawing.Size(115, 27);
             this.label478.TabIndex = 0;
             this.label478.Text = "Base Price";
             // 
@@ -86,10 +87,11 @@ namespace MegaDesk_Espinosa
             // label147
             // 
             this.label147.AutoSize = true;
-            this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label147.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label147.ForeColor = System.Drawing.Color.Black;
             this.label147.Location = new System.Drawing.Point(122, 91);
             this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(180, 25);
+            this.label147.Size = new System.Drawing.Size(199, 27);
             this.label147.TabIndex = 2;
             this.label147.Text = "Base Size Included";
             // 
@@ -108,10 +110,11 @@ namespace MegaDesk_Espinosa
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(120, 116);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 25);
+            this.label5.Size = new System.Drawing.Size(132, 27);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cost per in2";
             // 
@@ -131,10 +134,11 @@ namespace MegaDesk_Espinosa
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(120, 142);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(127, 25);
+            this.label7.Size = new System.Drawing.Size(145, 27);
             this.label7.TabIndex = 6;
             this.label7.Text = "Total size in2";
             // 
@@ -153,10 +157,11 @@ namespace MegaDesk_Espinosa
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(122, 241);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 25);
+            this.label1.Size = new System.Drawing.Size(179, 27);
             this.label1.TabIndex = 8;
             this.label1.Text = "Price per Drawer";
             // 
@@ -187,20 +192,22 @@ namespace MegaDesk_Espinosa
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(122, 193);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 25);
+            this.label9.Size = new System.Drawing.Size(102, 27);
             this.label9.TabIndex = 11;
             this.label9.Text = "Size Cost";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(122, 169);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(132, 25);
+            this.label10.Size = new System.Drawing.Size(143, 27);
             this.label10.TabIndex = 12;
             this.label10.Text = "Size Overage";
             // 
@@ -218,10 +225,11 @@ namespace MegaDesk_Espinosa
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(122, 363);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(127, 25);
+            this.label12.Size = new System.Drawing.Size(147, 27);
             this.label12.TabIndex = 14;
             this.label12.Text = "Material Cost";
             // 
@@ -240,10 +248,11 @@ namespace MegaDesk_Espinosa
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
             this.label14.Location = new System.Drawing.Point(122, 330);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 25);
+            this.label14.Size = new System.Drawing.Size(97, 27);
             this.label14.TabIndex = 16;
             this.label14.Text = "Material";
             // 
@@ -262,10 +271,11 @@ namespace MegaDesk_Espinosa
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
             this.label16.Location = new System.Drawing.Point(122, 274);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(120, 25);
+            this.label16.Size = new System.Drawing.Size(135, 27);
             this.label16.TabIndex = 18;
             this.label16.Text = "Drawer Cost";
             // 
@@ -284,10 +294,11 @@ namespace MegaDesk_Espinosa
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Black;
             this.label18.Location = new System.Drawing.Point(122, 431);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(160, 25);
+            this.label18.Size = new System.Drawing.Size(187, 27);
             this.label18.TabIndex = 20;
             this.label18.Text = "Shipping Method";
             // 
@@ -305,10 +316,11 @@ namespace MegaDesk_Espinosa
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
             this.label20.Location = new System.Drawing.Point(122, 473);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(135, 25);
+            this.label20.Size = new System.Drawing.Size(151, 27);
             this.label20.TabIndex = 22;
             this.label20.Text = "Shipping Cost";
             // 
@@ -327,6 +339,7 @@ namespace MegaDesk_Espinosa
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(583, 49);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(124, 32);
@@ -347,10 +360,11 @@ namespace MegaDesk_Espinosa
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
-            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft YaHei", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.ForeColor = System.Drawing.Color.Black;
             this.dateLabel.Location = new System.Drawing.Point(125, 572);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(57, 25);
+            this.dateLabel.Size = new System.Drawing.Size(60, 27);
             this.dateLabel.TabIndex = 26;
             this.dateLabel.Text = "Date";
             // 
@@ -369,6 +383,7 @@ namespace MegaDesk_Espinosa
             // 
             this.customerLabel.AutoSize = true;
             this.customerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerLabel.ForeColor = System.Drawing.Color.DodgerBlue;
             this.customerLabel.Location = new System.Drawing.Point(584, 116);
             this.customerLabel.Name = "customerLabel";
             this.customerLabel.Size = new System.Drawing.Size(97, 25);

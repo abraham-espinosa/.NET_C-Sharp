@@ -73,6 +73,16 @@ namespace MegaDesk_Espinosa.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Documents_icon {
+            get {
+                object obj = ResourceManager.GetObject("Documents-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pawel_czerwinski_kOfVxiO1LOk_unsplash {
             get {
                 object obj = ResourceManager.GetObject("pawel-czerwinski-kOfVxiO1LOk-unsplash", resourceCulture);
