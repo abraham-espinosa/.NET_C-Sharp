@@ -7,12 +7,19 @@ using System.Threading.Tasks;
 namespace MegaDesk_Espinosa
 {
     public class Desk
+
     {
-        //private member data
+        //public member data
         public int Width;
         public int Depth;
         public int Drawer;
         public string SurfaceMaterial;
+        //constant width and depth max and min 
+        public const int WIDTH_MAX = 96;
+        public const int WIDTH_MIN = 24;
+        public const int DEPTH_MAX = 48;
+        public const int DEPTH_MIN = 12;
+
 
         //constructor
         public Desk (int width, int depth, int drawer, string surface_material)
@@ -28,5 +35,14 @@ namespace MegaDesk_Espinosa
 
         }
 
+    }
+
+    enum DesktopMaterial
+    {
+        Oak,
+        Laminate,
+        Pine,
+        Rosewood,
+        Veneer
     }
 }

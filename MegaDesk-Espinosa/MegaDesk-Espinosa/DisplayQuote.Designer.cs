@@ -55,6 +55,10 @@ namespace MegaDesk_Espinosa
             this.shippingCostLabel = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.totalCostLabel = new System.Windows.Forms.Label();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.dateQuoteLabel = new System.Windows.Forms.Label();
+            this.customerLabel = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label478
@@ -313,7 +317,7 @@ namespace MegaDesk_Espinosa
             this.shippingCostLabel.AutoSize = true;
             this.shippingCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shippingCostLabel.ForeColor = System.Drawing.Color.White;
-            this.shippingCostLabel.Location = new System.Drawing.Point(412, 473);
+            this.shippingCostLabel.Location = new System.Drawing.Point(412, 474);
             this.shippingCostLabel.Name = "shippingCostLabel";
             this.shippingCostLabel.Size = new System.Drawing.Size(23, 25);
             this.shippingCostLabel.TabIndex = 23;
@@ -322,23 +326,65 @@ namespace MegaDesk_Espinosa
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(547, 51);
+            this.label22.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(583, 49);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(102, 25);
+            this.label22.Size = new System.Drawing.Size(124, 32);
             this.label22.TabIndex = 24;
             this.label22.Text = "Total Cost";
             // 
             // totalCostLabel
             // 
             this.totalCostLabel.AutoSize = true;
-            this.totalCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalCostLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalCostLabel.ForeColor = System.Drawing.Color.White;
             this.totalCostLabel.Location = new System.Drawing.Point(775, 51);
             this.totalCostLabel.Name = "totalCostLabel";
-            this.totalCostLabel.Size = new System.Drawing.Size(23, 25);
+            this.totalCostLabel.Size = new System.Drawing.Size(26, 29);
             this.totalCostLabel.TabIndex = 25;
             this.totalCostLabel.Text = "$";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Location = new System.Drawing.Point(125, 572);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(57, 25);
+            this.dateLabel.TabIndex = 26;
+            this.dateLabel.Text = "Date";
+            // 
+            // dateQuoteLabel
+            // 
+            this.dateQuoteLabel.AutoSize = true;
+            this.dateQuoteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateQuoteLabel.ForeColor = System.Drawing.Color.White;
+            this.dateQuoteLabel.Location = new System.Drawing.Point(412, 572);
+            this.dateQuoteLabel.Name = "dateQuoteLabel";
+            this.dateQuoteLabel.Size = new System.Drawing.Size(53, 25);
+            this.dateQuoteLabel.TabIndex = 27;
+            this.dateQuoteLabel.Text = "Date";
+            // 
+            // customerLabel
+            // 
+            this.customerLabel.AutoSize = true;
+            this.customerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerLabel.Location = new System.Drawing.Point(584, 116);
+            this.customerLabel.Name = "customerLabel";
+            this.customerLabel.Size = new System.Drawing.Size(97, 25);
+            this.customerLabel.TabIndex = 28;
+            this.customerLabel.Text = "Customer";
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(732, 538);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 59);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DisplayQuote
             // 
@@ -346,6 +392,10 @@ namespace MegaDesk_Espinosa
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(878, 709);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.customerLabel);
+            this.Controls.Add(this.dateQuoteLabel);
+            this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.totalCostLabel);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.shippingCostLabel);
@@ -410,5 +460,9 @@ namespace MegaDesk_Espinosa
         private System.Windows.Forms.Label shippingCostLabel;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label totalCostLabel;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Label dateQuoteLabel;
+        private System.Windows.Forms.Label customerLabel;
+        private System.Windows.Forms.Button button1;
     }
 }

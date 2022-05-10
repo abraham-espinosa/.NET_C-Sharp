@@ -121,5 +121,20 @@ namespace MegaDesk_Espinosa
                 }
             }
         }
+
+        private void AddQuote_Load(object sender, EventArgs e)
+        {
+            surface_material.Items.Add("Oak");
+            surface_material.Items.Add("Laminate");
+            surface_material.Items.Add("Pine");
+            surface_material.Items.Add("Rosewood");
+            surface_material.Items.Add("Veneer");
+
+            rush_days.Items.Add("3");
+            rush_days.Items.Add("5");
+            rush_days.Items.Add("7");
+            rush_days.Items.Add("14");
+
+        }
     }
 }

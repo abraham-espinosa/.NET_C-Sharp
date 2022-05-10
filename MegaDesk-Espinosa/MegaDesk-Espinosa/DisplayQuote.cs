@@ -44,11 +44,21 @@ namespace MegaDesk_Espinosa
 
             totalCostLabel.Text = $"${_deskQuote.totalCost(_deskQuote.surfaceAreaPrice(totalSize), _deskQuote.rushDaysPrice(_deskQuote.RushDays, totalSize), _deskQuote.surfaceMaterialPrice(_deskQuote.Desk.SurfaceMaterial), _deskQuote.drawersPrice(_deskQuote.Desk.Drawer))}";
             //MessageBox.Show(_deskQuote.CustomerName);
+
+            dateQuoteLabel.Text = $"{_deskQuote.QuoteDate}";
+            customerLabel.Text = $"{_deskQuote.CustomerName}";
         }
 
         private void costInLabel_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            MainMenu mainMenu = new MainMenu();
+            mainMenu.Show();
         }
     }
 }

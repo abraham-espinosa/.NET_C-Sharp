@@ -8,24 +8,13 @@ namespace MegaDesk_Espinosa
 {
     public class DeskQuote
     {
-        //This class will define the attributes of a quote including Desk, rush days, customer name, and quote date. 
+        //public member data
         public Desk Desk;
         public string CustomerName;
         public string QuoteDate;
         public int RushDays;
 
-        public DeskQuote (Desk desk, string customer_name, string quote_date, int rush_days)
-        {
-            this.Desk = desk;
-            this.RushDays = rush_days;
-            this.CustomerName = customer_name;
-            this.QuoteDate = quote_date;
-        }
-
-        public DeskQuote (Desk desk, string customer_name, string quote_date) :
-                       this(desk, customer_name, quote_date, 14)
-        {
-        }
+        //constructor
 
         public DeskQuote()
         {
