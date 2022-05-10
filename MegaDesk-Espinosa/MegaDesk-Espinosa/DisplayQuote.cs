@@ -13,6 +13,7 @@ namespace MegaDesk_Espinosa
     public partial class DisplayQuote : Form
     {
         private DeskQuote _deskQuote;
+        private int totalSize;
         public DisplayQuote(DeskQuote deskQuote)
         {
             _deskQuote = deskQuote;
@@ -22,7 +23,32 @@ namespace MegaDesk_Espinosa
 
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(_deskQuote.CustomerName);
+            basePriceLabel.Text = "$200";
+            baseSizeIncludedLabel.Text = "1000";
+            costInLabel.Text = "$1.00";
+
+            totalSize = _deskQuote.sizeArea(_deskQuote.Desk.Width, _deskQuote.Desk.Depth);
+            totalSizeLabel.Text = $"{totalSize}";
+
+            sizeOverageLabel.Text = $"{_deskQuote.surfaceAreaPrice(totalSize)}";
+            sizeCostLabel.Text = $"${_deskQuote.surfaceAreaPrice(totalSize)}";
+
+            priceDrawerLabel.Text = "$50.00";
+            drawerCostLabel.Text = $"${_deskQuote.drawersPrice(_deskQuote.Desk.Drawer)}";
+
+            materialLabel.Text = $"{_deskQuote.Desk.SurfaceMaterial}";
+            materialCostLabel.Text = $"${_deskQuote.surfaceMaterialPrice(_deskQuote.Desk.SurfaceMaterial)}";
+
+            shippingMethodLabel.Text = $"{_deskQuote.RushDays}";
+            shippingCostLabel.Text = $"${_deskQuote.rushDaysPrice(_deskQuote.RushDays, totalSize)}";
+
+            totalCostLabel.Text = $"${_deskQuote.totalCost(_deskQuote.surfaceAreaPrice(totalSize), _deskQuote.rushDaysPrice(_deskQuote.RushDays, totalSize), _deskQuote.surfaceMaterialPrice(_deskQuote.Desk.SurfaceMaterial), _deskQuote.drawersPrice(_deskQuote.Desk.Drawer))}";
+            //MessageBox.Show(_deskQuote.CustomerName);
+        }
+
+        private void costInLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

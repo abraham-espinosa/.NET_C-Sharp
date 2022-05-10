@@ -31,7 +31,10 @@ namespace MegaDesk_Espinosa
         {
 
         }
-
+        public int sizeArea(int width, int depth)
+        {
+            return width * depth;
+        }
         public int surfaceMaterialPrice(string surface_material)
         {
             if(surface_material == "Oak")
@@ -53,12 +56,11 @@ namespace MegaDesk_Espinosa
         }
         public int drawersPrice(int drawers)
         {
-            return drawers * 50;
+            return 50 * drawers;
         }
 
-        public int rushDaysPrice(int days, int width, int depth)
+        public int rushDaysPrice(int days, int area)
         {
-            int area = width * depth;
             if(days == 3 && area < 1000)
             {
                 return 60;
@@ -99,9 +101,8 @@ namespace MegaDesk_Espinosa
             }
         }
 
-        public int surfaceAreaPrice(int width, int depth)
+        public int surfaceAreaPrice(int area)
         {
-            int area = width* depth;
             if (area > 1000)
             {
                 return area - 1000;
@@ -110,6 +111,11 @@ namespace MegaDesk_Espinosa
             {
                 return 0;
             }
+        }
+
+        public int totalCost(int surfaceAreaPrice, int rushDaysPrice, int surfaceMaterialPrice, int drawerPrice)
+        {
+            return surfaceAreaPrice + rushDaysPrice + surfaceMaterialPrice + drawerPrice + 200;
         }
     }
 }

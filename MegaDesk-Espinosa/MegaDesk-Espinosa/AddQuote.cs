@@ -35,20 +35,34 @@ namespace MegaDesk_Espinosa
 
         private void SubmitOrderButton_Click(object sender, EventArgs e)
         {
-            _desk.Width = Convert.ToInt32(width.Text);
-            _desk.Depth = Convert.ToInt32(depth.Text);
-            _desk.Drawer = Convert.ToInt32(depth.Text);
-            _desk.SurfaceMaterial = Convert.ToString(surface_material.Text);
+            //if(width.Text !=String.Empty && depth.Text != String.Empty && drawer.Text != String.Empty && surface_material.Text != String.Empty && rush_days.Text != String.Empty && customer_name.Text != String.Empty)
+            //{
+            try
+            {
+                _desk.Width = Convert.ToInt32(width.Text);
+                _desk.Depth = Convert.ToInt32(depth.Text);
+                _desk.Drawer = Convert.ToInt32(drawer.Text);
+                _desk.SurfaceMaterial = Convert.ToString(surface_material.Text);
 
-            _deskQuote.RushDays = Convert.ToInt32(rush_days.Text);
-            _deskQuote.QuoteDate = date.ToString("MMMM dd yyyy");
-            _deskQuote.CustomerName = Convert.ToString(customer_name.Text);
-            _deskQuote.Desk = _desk;
+                _deskQuote.RushDays = Convert.ToInt32(rush_days.Text);
+                _deskQuote.QuoteDate = date.ToString("MMMM dd yyyy");
+                _deskQuote.CustomerName = Convert.ToString(customer_name.Text);
+                _deskQuote.Desk = _desk;
 
-            var displayQuote = new DisplayQuote(_deskQuote);
-            this.Hide();
-            displayQuote.ShowDialog();
-            
+                var displayQuote = new DisplayQuote(_deskQuote);
+                this.Hide();
+                displayQuote.ShowDialog();
+            }
+            catch (Exception error)
+            {
+                MessageBox.Show(error.Message);
+
+            }
+            //}
+           // else
+//{
+
+           // }
         }
 
         private void width_Validating(object sender, CancelEventArgs e)
@@ -56,8 +70,10 @@ namespace MegaDesk_Espinosa
             if(int.TryParse(width.Text, out int value))
             {
                 width.BackColor = Color.White;
+                SubmitOrderButton.Enabled = true;
                 if (value < 24 || value > 96)
                 {
+                    SubmitOrderButton.Enabled = false;
                     width.BackColor = Color.OrangeRed;
                     width.Focus();
                     MessageBox.Show("Minimum 24 inches and maximum 96 inches");
@@ -65,26 +81,45 @@ namespace MegaDesk_Espinosa
             }
             else
             {
-                width.Text = String.Empty;
-                width.BackColor = Color.OrangeRed;
-                width.Focus();
-                MessageBox.Show("Enter a numeric value");
+                if (width.Text != String.Empty)
+                {
+                    SubmitOrderButton.Enabled = false;
+                    width.Text = String.Empty;
+                    width.BackColor = Color.OrangeRed;
+                    width.Focus();
+                    MessageBox.Show("Enter a numeric value");
+                }
             }
         }
 
         private void depth_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //if (Char.IsDigit(depth.Text, 20))
-            //{
-            //    depth.BackColor = Color.White;
-            //}
-            //else
-            //{
-            //    depth.Text = String.Empty;
-            //    depth.BackColor = Color.OrangeRed;
-            //    depth.Focus();
-            //    MessageBox.Show("Enter a numeric value");
-            //}
+            
+            if (Char.IsDigit(e.KeyChar))
+            {
+                depth.BackColor = Color.White;
+                if (int.TryParse(depth.Text, out int value))
+                {
+                    SubmitOrderButton.Enabled = true;
+                    if (value < 12 || value > 48)
+                    {
+                        SubmitOrderButton.Enabled = false;
+                        width.BackColor = Color.OrangeRed;
+                        width.Focus();
+                        MessageBox.Show("Minimum 12 inches and maximum of 48 inches");
+                    }
+                }
+            }
+            else
+            {
+                if (depth.Text != String.Empty) {
+                SubmitOrderButton.Enabled = false;
+                depth.BackColor = Color.OrangeRed;
+                depth.Focus();
+                MessageBox.Show("Enter a numeric value");
+                depth.Text = String.Empty;
+                }
+            }
         }
     }
 }
