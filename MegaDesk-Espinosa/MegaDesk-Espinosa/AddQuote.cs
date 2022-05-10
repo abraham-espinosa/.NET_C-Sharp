@@ -15,8 +15,8 @@ namespace MegaDesk_Espinosa
         // Display the current date using this format: 27 August 2020
         DateTime date = DateTime.Now;
 
-        private readonly Desk _addQuote = new Desk();
-        private DeskQuote _deskQuote;
+        private readonly Desk _desk = new Desk();
+        private readonly DeskQuote _deskQuote = new DeskQuote();
 
         public AddQuote()
         {
@@ -35,12 +35,20 @@ namespace MegaDesk_Espinosa
 
         private void SubmitOrderButton_Click(object sender, EventArgs e)
         {
-            _addQuote.Width = Convert.ToInt32(width.Text);
-            _addQuote.Depth = Convert.ToInt32(depth.Text);
-            _deskQuote = new DeskQuote(_addQuote, Convert.ToString(customer_name), date.ToString("MMMM dd yyyy"));
-            //MessageBox.Show(Convert.ToString(_deskquote.surfaceMaterialPrice(_deskquote.Desk.SurfaceMaterial)));
+            _desk.Width = Convert.ToInt32(width.Text);
+            _desk.Depth = Convert.ToInt32(depth.Text);
+            _desk.Drawer = Convert.ToInt32(depth.Text);
+            _desk.SurfaceMaterial = Convert.ToString(surface_material.Text);
+
+            _deskQuote.RushDays = Convert.ToInt32(rush_days.Text);
+            _deskQuote.QuoteDate = date.ToString("MMMM dd yyyy");
+            _deskQuote.CustomerName = Convert.ToString(customer_name.Text);
+            _deskQuote.Desk = _desk;
+
             var displayQuote = new DisplayQuote(_deskQuote);
+            this.Hide();
             displayQuote.ShowDialog();
+            
         }
 
         private void width_Validating(object sender, CancelEventArgs e)

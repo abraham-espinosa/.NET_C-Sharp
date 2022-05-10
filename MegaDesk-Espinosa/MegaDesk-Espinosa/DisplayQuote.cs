@@ -22,8 +22,7 @@ namespace MegaDesk_Espinosa
 
         private void DisplayQuote_Load(object sender, EventArgs e)
         {
-            MessageBox.Show(Convert.ToString(_deskQuote.CustomerName));
-
+            MessageBox.Show(_deskQuote.CustomerName);
         }
     }
 }
