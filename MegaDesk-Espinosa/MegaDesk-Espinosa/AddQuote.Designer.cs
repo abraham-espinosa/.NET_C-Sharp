@@ -48,9 +48,10 @@ namespace MegaDesk_Espinosa
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(66, 657);
+            this.button1.Location = new System.Drawing.Point(44, 427);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 46);
+            this.button1.Size = new System.Drawing.Size(63, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "Back";
             this.button1.UseVisualStyleBackColor = true;
@@ -61,19 +62,17 @@ namespace MegaDesk_Espinosa
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(66, 135);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(44, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 20);
+            this.label1.Size = new System.Drawing.Size(65, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Full name:";
             // 
             // customer_name
             // 
-            this.customer_name.Location = new System.Drawing.Point(66, 175);
-            this.customer_name.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.customer_name.Location = new System.Drawing.Point(44, 114);
             this.customer_name.Name = "customer_name";
-            this.customer_name.Size = new System.Drawing.Size(182, 26);
+            this.customer_name.Size = new System.Drawing.Size(123, 20);
             this.customer_name.TabIndex = 2;
             // 
             // label2
@@ -81,28 +80,25 @@ namespace MegaDesk_Espinosa
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(348, 135);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(232, 88);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 20);
+            this.label2.Size = new System.Drawing.Size(90, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "Width of desk:";
             // 
             // width
             // 
-            this.width.Location = new System.Drawing.Point(352, 175);
-            this.width.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.width.Location = new System.Drawing.Point(235, 114);
             this.width.Name = "width";
-            this.width.Size = new System.Drawing.Size(182, 26);
+            this.width.Size = new System.Drawing.Size(123, 20);
             this.width.TabIndex = 4;
             this.width.Validating += new System.ComponentModel.CancelEventHandler(this.width_Validating);
             // 
             // depth
             // 
-            this.depth.Location = new System.Drawing.Point(630, 175);
-            this.depth.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.depth.Location = new System.Drawing.Point(420, 114);
             this.depth.Name = "depth";
-            this.depth.Size = new System.Drawing.Size(182, 26);
+            this.depth.Size = new System.Drawing.Size(123, 20);
             this.depth.TabIndex = 6;
             this.depth.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.depth_KeyPress);
             // 
@@ -111,20 +107,18 @@ namespace MegaDesk_Espinosa
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(626, 135);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(417, 88);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 20);
+            this.label3.Size = new System.Drawing.Size(91, 13);
             this.label3.TabIndex = 5;
             this.label3.Text = "Depth of desk:";
             // 
             // drawer
             // 
             this.drawer.FormattingEnabled = true;
-            this.drawer.Location = new System.Drawing.Point(66, 292);
-            this.drawer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.drawer.Location = new System.Drawing.Point(44, 190);
             this.drawer.Name = "drawer";
-            this.drawer.Size = new System.Drawing.Size(182, 28);
+            this.drawer.Size = new System.Drawing.Size(123, 21);
             this.drawer.TabIndex = 7;
             // 
             // label4
@@ -132,10 +126,9 @@ namespace MegaDesk_Espinosa
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(64, 254);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(43, 165);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(159, 20);
+            this.label4.Size = new System.Drawing.Size(107, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Number of drawer";
             // 
@@ -144,29 +137,26 @@ namespace MegaDesk_Espinosa
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(348, 254);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(232, 165);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(124, 20);
+            this.label5.Size = new System.Drawing.Size(84, 13);
             this.label5.TabIndex = 10;
             this.label5.Text = "Material type:";
             // 
             // surface_material
             // 
             this.surface_material.FormattingEnabled = true;
-            this.surface_material.Location = new System.Drawing.Point(352, 292);
-            this.surface_material.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.surface_material.Location = new System.Drawing.Point(235, 190);
             this.surface_material.Name = "surface_material";
-            this.surface_material.Size = new System.Drawing.Size(182, 28);
+            this.surface_material.Size = new System.Drawing.Size(123, 21);
             this.surface_material.TabIndex = 9;
             // 
             // rush_days
             // 
             this.rush_days.FormattingEnabled = true;
-            this.rush_days.Location = new System.Drawing.Point(630, 292);
-            this.rush_days.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.rush_days.Location = new System.Drawing.Point(420, 190);
             this.rush_days.Name = "rush_days";
-            this.rush_days.Size = new System.Drawing.Size(182, 28);
+            this.rush_days.Size = new System.Drawing.Size(123, 21);
             this.rush_days.TabIndex = 11;
             // 
             // label6
@@ -174,19 +164,17 @@ namespace MegaDesk_Espinosa
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(626, 254);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(417, 165);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(203, 20);
+            this.label6.Size = new System.Drawing.Size(134, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Order processing time:";
             // 
             // SubmitOrderButton
             // 
-            this.SubmitOrderButton.Location = new System.Drawing.Point(330, 455);
-            this.SubmitOrderButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SubmitOrderButton.Location = new System.Drawing.Point(220, 296);
             this.SubmitOrderButton.Name = "SubmitOrderButton";
-            this.SubmitOrderButton.Size = new System.Drawing.Size(225, 98);
+            this.SubmitOrderButton.Size = new System.Drawing.Size(150, 64);
             this.SubmitOrderButton.TabIndex = 13;
             this.SubmitOrderButton.Text = "Submit Order";
             this.SubmitOrderButton.UseVisualStyleBackColor = true;
@@ -195,18 +183,19 @@ namespace MegaDesk_Espinosa
             // dateLabel
             // 
             this.dateLabel.AutoSize = true;
-            this.dateLabel.Location = new System.Drawing.Point(66, 49);
+            this.dateLabel.Location = new System.Drawing.Point(44, 32);
+            this.dateLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(44, 20);
+            this.dateLabel.Size = new System.Drawing.Size(30, 13);
             this.dateLabel.TabIndex = 14;
             this.dateLabel.Text = "Date";
             // 
             // AddQuote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
-            this.ClientSize = new System.Drawing.Size(885, 720);
+            this.ClientSize = new System.Drawing.Size(590, 456);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.SubmitOrderButton);
             this.Controls.Add(this.label6);
@@ -222,9 +211,10 @@ namespace MegaDesk_Espinosa
             this.Controls.Add(this.customer_name);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddQuote";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AddQuote";
+            this.Text = "Add Quote";
             this.Load += new System.EventHandler(this.AddQuote_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

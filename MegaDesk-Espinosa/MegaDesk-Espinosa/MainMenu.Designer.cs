@@ -40,7 +40,7 @@ namespace MegaDesk_Espinosa
             // AddQuoteButton
             // 
             this.AddQuoteButton.Location = new System.Drawing.Point(19, 12);
-            this.AddQuoteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AddQuoteButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddQuoteButton.Name = "AddQuoteButton";
             this.AddQuoteButton.Size = new System.Drawing.Size(89, 48);
             this.AddQuoteButton.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace MegaDesk_Espinosa
             // ViewQuoteButton
             // 
             this.ViewQuoteButton.Location = new System.Drawing.Point(166, 13);
-            this.ViewQuoteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ViewQuoteButton.Margin = new System.Windows.Forms.Padding(2);
             this.ViewQuoteButton.Name = "ViewQuoteButton";
             this.ViewQuoteButton.Size = new System.Drawing.Size(89, 48);
             this.ViewQuoteButton.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace MegaDesk_Espinosa
             // SearchQuoteButton
             // 
             this.SearchQuoteButton.Location = new System.Drawing.Point(317, 13);
-            this.SearchQuoteButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SearchQuoteButton.Margin = new System.Windows.Forms.Padding(2);
             this.SearchQuoteButton.Name = "SearchQuoteButton";
             this.SearchQuoteButton.Size = new System.Drawing.Size(89, 48);
             this.SearchQuoteButton.TabIndex = 2;
@@ -73,7 +73,7 @@ namespace MegaDesk_Espinosa
             // ExitButton
             // 
             this.ExitButton.Location = new System.Drawing.Point(461, 11);
-            this.ExitButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ExitButton.Margin = new System.Windows.Forms.Padding(2);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(89, 48);
             this.ExitButton.TabIndex = 3;
@@ -85,7 +85,7 @@ namespace MegaDesk_Espinosa
             // 
             this.pictureBox1.Image = global::MegaDesk_Espinosa.Properties.Resources.desk_icon;
             this.pictureBox1.Location = new System.Drawing.Point(38, 18);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(512, 512);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -104,10 +104,10 @@ namespace MegaDesk_Espinosa
             this.Controls.Add(this.ViewQuoteButton);
             this.Controls.Add(this.AddQuoteButton);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MainMenu";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
